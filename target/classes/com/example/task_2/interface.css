@@ -1,0 +1,61 @@
+.menuButton {
+    -fx-pref-width: 700;
+    -fx-pref-height: 140;
+    -fx-background-color: transparent;
+    -fx-border-width: 10;
+    -fx-border-color: white;
+    -fx-cursor: hand;
+}
+.menuButton:hover {
+    -fx-border-color: yellow;
+    -fx-text-fill: yellow;
+}
+.gameFunctionalButton {
+    -fx-pref-width: 240;
+    -fx-pref-height: 40;
+    -fx-background-color: transparent;
+    -fx-border-width: 10;
+    -fx-border-color: white;
+    -fx-font-size: 40;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+.gameFunctionalButton: hover {
+    -fx-border-color: yellow;
+    -fx-text-fill: yellow;
+}
+.gameActionButton {
+    -fx-background-color: transparent;
+}
+.gameActionButton: hover {
+    -fx-background-color: #363636;
+}
+.playersSlider .axis {
+    -fx-tick-label-fill: white;
+    -fx-tick-label-font-size: 20;
+}
+.playersSlider .thumb {
+    -fx-padding: 10;
+    -fx-background-image: url("/main/resources/other/pictures/chip.png");
+}
+.sitPlace {
+    -fx-pref-width: 100;
+    -fx-pref-height: 100;
+    -fx-background-color: #bf0a30;
+    -fx-border-radius: 50;
+    -fx-border-width: 10;
+    -fx-border-color: black;
+    -fx-cursor: hand;
+}
+.Spinner {
+    -fx-font-size: 20;
+}
+.ChoiceBox {
+    -fx-font-size: 20;
+}
+.sitPlace:hover {
+    -fx-border-color: cyan;
+}
+.display {
+    -fx-background-color: "#4B0082";
+}

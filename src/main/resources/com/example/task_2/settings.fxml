@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane cacheShape="false" prefHeight="972.0" prefWidth="1044.0" styleClass="display" stylesheets="@interface.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task_2.SettingsController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="141.0" prefWidth="756.0" text="Настройки" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="96.0" />
+         </font></Label>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#onBackButtonClick" styleClass="gameFunctionalButton" text="Назад" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" />
+      <Label layoutX="28.0" layoutY="338.0" prefHeight="74.0" prefWidth="680.0" text="Начальное количество денег:" textFill="WHITE" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font size="50.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="169.0" text="Количество игроков:" textFill="WHITE" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Slider fx:id="playersSlider" blockIncrement="1.0" cacheShape="false" centerShape="false" layoutX="405.0" layoutY="195.0" majorTickUnit="1.0" max="6.0" min="2.0" minorTickCount="0" onMouseReleased="#onPlayersSliderReleased" prefHeight="14.0" prefWidth="494.0" scaleShape="false" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="playersSlider" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="280.0" />
+      <Spinner fx:id="moneySpinner" editable="true" layoutX="723.0" layoutY="375.0" onInputMethodTextChanged="#moneySpinnerValueChanged" onMouseReleased="#moneySpinnerValueChanged" onScrollFinished="#moneySpinnerValueChanged" prefHeight="26.0" prefWidth="290.0" styleClass="Spinner" AnchorPane.leftAnchor="750.0" AnchorPane.topAnchor="370.0" />
+      <Label layoutX="28.0" layoutY="416.0" text="Тематика игроков:" textFill="WHITE" AnchorPane.topAnchor="450.0">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="themeChooser" layoutX="475.0" layoutY="487.0" prefHeight="25.0" prefWidth="290.0" style="-fx-background-color: white;" styleClass="ChoiceBox" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="470.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="gamePane" prefHeight="573.0" prefWidth="774.0" style="-fx-background-color: #320349;" stylesheets="@interface.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task_2.GameController">
+   <children>
+      <Canvas fx:id="gameCanvas" height="2000.0" width="2186.0" />
+      <Button fx:id="endGameButton" layoutX="22.0" layoutY="1879.0" mnemonicParsing="false" onAction="#onEndGameButtonClick" prefHeight="106.0" prefWidth="274.0" styleClass="gameFunctionalButton" text="Меню" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" />
+      <Label fx:id="tipsLabel" prefHeight="80.0" prefWidth="368.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 3;" text="Ожидайте..." textFill="WHITE" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutX="83.0" layoutY="572.0" mnemonicParsing="false" onAction="#onStartButtonClick" styleClass="gameFunctionalButton" text="Начать" AnchorPane.bottomAnchor="130.0" AnchorPane.leftAnchor="15.0" />
+      <Button fx:id="betButton" layoutX="1966.0" layoutY="1858.0" mnemonicParsing="false" onAction="#mainPlayerBet" prefHeight="60.0" prefWidth="300.0" style="-fx-border-color: BLUE; -fx-border-width: 5; -fx-border-radius: 30; -fx-background-radius: 30;" styleClass="gameActionButton" stylesheets="@interface.css" text="BET" textFill="WHITE" AnchorPane.bottomAnchor="207.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Roboto Light" size="26.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.0" />
+         </effect></Button>
+      <Button fx:id="raiseButton" layoutX="2048.0" layoutY="1884.0" mnemonicParsing="false" onAction="#mainPlayerRaise" prefHeight="60.0" prefWidth="300.0" style="-fx-border-color: red; -fx-border-width: 5; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="gameActionButton" stylesheets="@interface.css" text="RAISE" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.0" />
+         </effect></Button>
+      <Button fx:id="checkButton" layoutX="255.0" layoutY="1564.0" mnemonicParsing="false" onAction="#mainPlayerCheck" prefHeight="60.0" prefWidth="300.0" style="-fx-border-color: #1ae03f; -fx-border-width: 5; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="gameActionButton" stylesheets="@interface.css" text="CHECK" textFill="WHITE" AnchorPane.bottomAnchor="138.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.0" />
+         </effect></Button>
+      <Button fx:id="foldButton" layoutX="2046.0" layoutY="1940.0" mnemonicParsing="false" onAction="#mainPlayerFold" prefHeight="60.0" prefWidth="300.0" style="-fx-border-color: #ff7a00; -fx-border-width: 5; -fx-background-radius: 30; -fx-border-radius: 30;" styleClass="gameActionButton" stylesheets="@interface.css" text="FOLD" textFill="WHITE" AnchorPane.bottomAnchor="69.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.0" />
+         </effect></Button>
+   </children>
+</AnchorPane>
